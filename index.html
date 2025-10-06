@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="0; url=https://8a294ab0-c42a-4d1f-8725-1453a7225577-00-u0kd7ajgdwgv.sisko.replit.dev/" />
-  </head>
-  <body>
-    <p>.</p>
-  </body>
+<html>
+<head>
+  <title>Wake Replit Server</title>
+  <meta charset="UTF-8">
+  <script>
+    // 서버 깨우기용 요청 (원래 프로젝트 링크)
+    fetch("https://replit.com/@CodeNameX0/ChatCoder-Light")
+      .then(() => {
+        // 요청 후 바로 리디렉션 (실행 주소)
+        window.location.href = "https://8a294ab0-c42a-4d1f-8725-1453a7225577-00-u0kd7ajgdwgv.sisko.replit.dev/";
+      })
+      .catch(() => {
+        alert("서버를 깨우는 데 실패했습니다. 잠시 후 다시 시도해주세요.");
+      });
+  </script>
+</head>
+<body></body>
 </html>
